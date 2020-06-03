@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>Thadomal Shahani Engineering College</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Complaint form.css">
+</head>
+<body>
+<div class = "container">
+ <h1 class ="college">Complaint Form</h1>
+ <div class = "wrapper">
+    <div class = "complaintform">
+        
+        <img src = "tsec.png" width="100%">
+    </div>
+    <div class="complaint">
+      <form id="ComplaintForm">
+        <div class="alert">Your message has been sent.</div>
+          <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            
+            <label>Email Address</label>
+            <input type="email" name="email" id="email"
+            required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="Phone number" id="phone number">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="name" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+              <button type="submit">Submit</button>
+              
+          </p>
+      </form>
+    </div>
+ </div> 
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
+
+<script src="Javascript/complaint.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:#282828;
+    color:white;
+    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+
+}
+
+.container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+
+}
+.college{
+    text-align: center;
+}
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+.wrapper>*{
+    padding:1em
+}
+.complaintform{
+    background-color: #000039;
+    text-align: center;
+}
+.complaint{
+    background: rgb(209, 245, 255);
+    color: black;
+}
+.complaint form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+.complaint form label{
+    display: block;
+}
+.complaint form  p{    
+margin: 0;
+}
+.complaint form full{
+    grid-column: 1 / 3;
+}
+.complaint form button, .complaint form input, .complaint form textarea{
+
+    width: auto;
+    padding: 1em;
+    border: 1px solid #000039;
+}
+.complaint form button{
+    background-color: #000039;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+}
+.complaint form button:hover , .complaint form button:focus{
+    background:#282828;
+    color:white;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+.alert{
+    text-align: center;
+    padding: 10px;
+    background:red;
+    color:#fff;
+    margin-bottom: 10px;
+    display:none;
+}
+@media(min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+}
